@@ -82,12 +82,13 @@ int main(void)
 		e2.entero=pair[i].sum;
 		e2.c=pair[i].c;
 		
-		printf("\n Elemento %c %d\n",e2.c,e2.entero);
+		//printf("\n Elemento %c %d\n",e2.c,e2.entero);
 		
 		NewLeftSonA(&Edgardo,NULL,e2);
-		e3.arbol = Edgardo;
+		e3.arbol = Edgardo; 
 		Add(&l,e3);//Se agrega la raiz a la lista
-		DestroyA(&Edgardo);
+		//printf("Tam.lista %d\n",Size(&l));
+		//DestroyA(&Edgardo);
 	}
 	
 	printf("Tam.lista %d\n",Size(&l));
@@ -114,7 +115,8 @@ void Huffman(lista *l)
 		p=RootA(&a);
 		eA=ReadNodeA(&a,p);
 
-		printf("%c %d\n",eA.c,eA.entero);
+		printf("\n1 %c %d\n",eA.c,eA.entero);
+		
 	}
 }
 
